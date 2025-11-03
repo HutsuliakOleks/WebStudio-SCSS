@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./reset/reset.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header_position">
+        <a href="/" class="logo">Web<span class="logo_studio">Studio</span></a>
+        <nav class="nav">
+          <ul class="nav_list">
+            <li class="nav_list_item">
+              <a href="./index.html" class="nav_list_item_link">Студія</a>
+            </li>
+            <li class="nav_list_item">
+              <a href="./portfolio.html" class="nav_list_item_link"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="nav_list_item">
+              <a href="#" class="nav_list_item_link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact_list">
+          <li class="contact_list_item">
+            <a href="mailto:info@devstudio.com" class="contact_list_item_link">
+              <svg width="16" height="12" class="contact_list_item_link_icon">
+                <use
+                  href="icons/symbol-defs.svg#icon-envelope-hover"
+                ></use></svg
+              >info@devstudio.com
+            </a>
+          </li>
+          <li class="contact_list_item">
+            <a href="tel:+380961111111" class="contact_list_item_link">
+              <svg width="10" height="12" class="contact_list_item_link_icon">
+                <use href="icons/symbol-defs.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio">
+        <div class="container">
+          <ul class="portfolio_list">
+            <li class="portfolio_list_button">
+              <button type="button" class="portfolio_list_button_link">
+                Усі
+              </button>
+            </li>
+            <li class="portfolio_list_button">
+              <button type="button" class="portfolio_list_button_link">
+                Веб-Сайти
+              </button>
+            </li>
+            <li class="portfolio_list_button">
+              <button type="button" class="portfolio_list_button_link">
+                Додатки
+              </button>
+            </li>
+            <li class="portfolio_list_button">
+              <button type="button" class="portfolio_list_button_link">
+                Дизайн
+              </button>
+            </li>
+            <li class="portfolio_list_button">
+              <button type="button" class="portfolio_list_button_link">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <ul class="portfolio_card">
+            <li class="portfolio_card_item">
+              <div class="portfolio_card_item_image" data-aos="fade-up">
+                <img src="./image/portfolioimage/technocrack.png" />
+                <p class="portfolio_card_item_image_overlay">
+                  Ресурс пропонує комплексні пропозиції з рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпені
+                  відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <h2 class="portfolio_card_item_title">Технокряк</h2>
+              <p class="portfolio_card_item_text">Веб-Сайт</p>
+            </li>
+            <li class="portfolio_card_item">
+              <div class="portfolio_card_item_image" data-aos="fade-up">
+                <img src="./image/portfolioimage/neworleansgoldstar.png" />
+                <p class="portfolio_card_item_image_overlay">
+                  Ресурс пропонує комплексні пропозиції з рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпені
+                  відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <h2 class="portfolio_card_item_title">
+                Постер New Orlean vs Golden Star
+              </h2>
+              <p class="portfolio_card_item_text">Дизайн</p>
+            </li>
+            <li class="portfolio_card_item">
+              <div class="portfolio_card_item_image" data-aos="fade-up">
+                <img src="./image/portfolioimage/seafood.png" />
+                <p class="portfolio_card_item_image_overlay">
+                  Ресурс пропонує комплексні пропозиції з рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпені
+                  відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <h2 class="portfolio_card_item_title">Ресторан Seafood</h2>
+              <p class="portfolio_card_item_text">Додаток</p>
+            </li>
+            <li class="portfolio_card_item">
+              <div class="portfolio_card_item_image" data-aos="fade-up">
+                <img src="./image/portfolioimage/projectprime.png" />
+                <p class="portfolio_card_item_image_overlay">
+                  Ресурс пропонує комплексні пропозиції з рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпені
+                  відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <h2 class="portfolio_card_item_title">Проєкт Prime</h2>
+              <p class="portfolio_card_item_text">Маркетинг</p>
+            </li>
+            <li class="portfolio_card_item">
+              <div class="portfolio_card_item_image" data-aos="fade-up">
+                <img src="./image/portfolioimage/projectboxes.png" />
+                <p class="portfolio_card_item_image_overlay">
+                  Ресурс пропонує комплексні пропозиції з рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпені
+                  відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <h2 class="portfolio_card_item_title">Проєкт Boxes</h2>
+              <p class="portfolio_card_item_text">Додаток</p>
+            </li>
+            <li class="portfolio_card_item">
+              <div class="portfolio_card_item_image" data-aos="fade-up">
+                <img src="./image/portfolioimage/inspiration.png" />
+                <p class="portfolio_card_item_image_overlay">
+                  Ресурс пропонує комплексні пропозиції з рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпені
+                  відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <h2 class="portfolio_card_item_title">
+                Inspiration has no Borders
+              </h2>
+              <p class="portfolio_card_item_text">Веб-Сайт</p>
+            </li>
+            <li class="portfolio_card_item">
+              <div class="portfolio_card_item_image" data-aos="fade-up">
+                <img src="./image/portfolioimage/limitededition.png" />
+                <p class="portfolio_card_item_image_overlay">
+                  Ресурс пропонує комплексні пропозиції з рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпені
+                  відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <h2 class="portfolio_card_item_title">Видання Limited Edition</h2>
+              <p class="portfolio_card_item_text">Дизайн</p>
+            </li>
+            <li class="portfolio_card_item">
+              <div class="portfolio_card_item_image" data-aos="fade-up">
+                <img src="./image/portfolioimage/labeltag.png" />
+                <p class="portfolio_card_item_image_overlay">
+                  Ресурс пропонує комплексні пропозиції з рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпені
+                  відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <h2 class="portfolio_card_item_title">Проєкт LAB</h2>
+              <p class="portfolio_card_item_text">Маркетинг</p>
+            </li>
+            <li class="portfolio_card_item">
+              <div class="portfolio_card_item_image" data-aos="fade-up">
+                <img src="./image/portfolioimage/growingbusiness.png" />
+                <p class="portfolio_card_item_image_overlay">
+                  Ресурс пропонує комплексні пропозиції з рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпені
+                  відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <h2 class="portfolio_card_item_title">Growing Business</h2>
+              <p class="portfolio_card_item_text">Додаток</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a href="/" class="logo"
+          >Web<span class="footer_logo_studio">Studio</span></a
+        >
+        <address>
+          <p class="footer_text">м. Київ, пр-т Лесі Українки, 26</p>
+          <ul class="footer_contact_list">
+            <li class="footer_contact_list_item">
+              <a
+                href="mailto:info@example.com"
+                class="footer_contact_list_item_link"
+                >info@example.com</a
+              >
+            </li>
+            <li class="footer_contact_list_item">
+              <a href="tel:+380961111111" class="footer_contact_list_item_link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <div class="footer_icon">
+            <h2 class="footer_icon_title">Приєднутесь</h2>
+            <ul class="footer_icon_list">
+              <li class="footer_icon_list_item">
+                <a href="#" class="footer_icon_list_item_link">
+                  <svg width="20" height="20">
+                    <use
+                      href="./icons/symbol-defs.svg#icon-instagram-white"
+                      class="footer_icon_list_item_link_platform"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer_icon_list_item">
+                <a href="#" class="footer_icon_list_item_link">
+                  <svg width="20" height="20">
+                    <use
+                      href="icons/symbol-defs.svg#icon-twitter-white"
+                      class="footer_icon_list_item_link_platform"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer_icon_list_item">
+                <a href="#" class="footer_icon_list_item_link">
+                  <svg width="20" height="20">
+                    <use
+                      href="icons/symbol-defs.svg#icon-facebook-white"
+                      class="footer_icon_list_item_link_platform"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer_icon_list_item">
+                <a href="#" class="footer_icon_list_item_link">
+                  <svg width="20" height="20">
+                    <use
+                      href="./icons/symbol-defs.svg#icon-linkedin-white"
+                      class="footer_icon_list_item_link_platform"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </address>
+        <div class="footer_input_search">
+          <label class="footer_input_search_label"
+            >Підпишіться на розсилку</label
+          >
+          <div class="footer_input_search_container">
+            <input
+              type="text"
+              name="name"
+              placeholder="E-mail"
+              class="footer_input_search_name"
+            />
+            <button type="button" class="footer_input_search_button">
+              Підписатися
+              <svg width="24" height="24">
+                <use href="./icons/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <circle cx="15" cy="15" r="15" fill="white" />
+          <svg width="18" height="18">
+            <use
+              href="./icons/symbol-defs.svg#icon-close-black-18dp-2-1"
+              <circle
+              cx="15"
+              cy="15"
+              r="14.5"
+              stroke="black"
+              stroke-opacity="0.1"
+              class="modal-close-stroke"
+            />
+          </svg>
+        </button>
+        <h2 class="modal-text">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form">
+          <div class="modal-form-field">
+            <label class="modal-form-label">Ім'я</label>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="modal-form-label-input"
+                required
+              />
+              <svg width="18" height="18" class="input-icon">
+                <use href ="icons/symbol-defs.svg#icon-person-black-18dp-1"
+              </svg>
+            </div>
+            <label class="modal-form-label">Телефон</label>
+            <div class="input-wrapper">
+              <input
+                type="phone"
+                id="phone"
+                name="phone"
+                class="modal-form-label-input"
+                required
+              />
+              <svg width="18" height="18" class="input-icon">
+                <use href ="icons/symbol-defs.svg#icon-phone-black-18dp-1"
+              </svg>
+            </div>
+            <label class="modal-form-label">Пошта</label>
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="modal-form-label-input"
+                required
+              />
+              <svg width="18" height="18" class="input-icon">
+                <use href ="icons/symbol-defs.svg#icon-email-black-18dp-1"
+              </svg>
+            </div>
+            <label class="modal-form-label">Коментар</label>
+            <div class="modal-textarea">
+              <textarea
+                name=""
+                id="comments"
+                class="comments-area"
+                rows="6"
+                cols="48"
+              >
+              </textarea>
+            </div>
+            <div class="form-field-check">
+              <input type="checkbox" is="input check" chass="input-check" />
+              <label for="input-check" class="input_check_check">
+                Погоджуюся з розсилкою та приймаю<a href="#" class="policy"
+                  >Умови договору</a
+                >
+              </label>
+            </div>
+            <button class="button_send" type="button">Відправити</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./script/modal.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

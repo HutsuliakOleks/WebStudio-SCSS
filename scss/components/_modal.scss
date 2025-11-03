@@ -1,0 +1,134 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 250ms;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
+}
+
+.modal {
+  position: absolute;
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  transition: transform 250ms;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  background-color: none;
+  border: none;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.modal-close-stroke {
+  stroke: 1px solid black;
+}
+
+.modal-text {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.modal-form {
+  margin-top: 12px;
+}
+
+.modal-form-field + .modal-form-field {
+  margin-top: 10px;
+}
+
+.input-wrapper {
+  position: relative;
+  left: 40px;
+}
+
+.input-wrapper:active {
+  border: 1px solid #2196f3;
+  width: 448px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.input-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.input-icon:active {
+  fill: #2196f3;
+}
+
+.modal-form-label {
+  position: relative;
+  left: 40px;
+  padding-bottom: 4px;
+}
+
+.modal-form-label-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 12px 40px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.modal-textarea {
+  position: relative;
+  left: 40px;
+  border-radius: 4px;
+  width: 448px;
+  height: 120px;
+  border: 1px solid #afb1b8;
+  margin-bottom: 20px;
+}
+
+.comments-area {
+  resize: none;
+  border: none;
+}
+
+.form-field-check {
+  display: flex;
+  justify-content: center;
+}
+
+.input_check_check {
+  justify-content: center;
+}
+
+.button_send {
+  position: relative;
+  left: 33.34%;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}

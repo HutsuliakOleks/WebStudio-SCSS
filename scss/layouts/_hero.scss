@@ -1,0 +1,42 @@
+.hero {
+  background-image: url("../image/Img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero_image {
+    animation-name: slide;
+  animation-delay: 0ms;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: none;
+}
+
+@keyframes slide {
+  0% {
+  }
+  50% {
+  }
+  100% {
+  }
+}
+
+.hero_title {
+  width: 696px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  line-height: 1.36;
+  word-spacing: 5px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
