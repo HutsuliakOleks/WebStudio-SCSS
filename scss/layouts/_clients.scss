@@ -23,14 +23,26 @@
   justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-
-.clients_icon:hover {
-  border-color: rgb(0%, 50%, 100%);
-}
-
-.clients_icon:hover .clients_icon_logo {
-  fill: rgb(0%, 50%, 100%);
+  &:hover {
+    border-color: rgb(0%, 50%, 100%);
+  }
+  &:hover .clients_icon_logo {
+    fill: rgb(0%, 50%, 100%);
+  }
+  .clients_icon_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 106px;
+    height: 60px;
+    transition: 250ms;
+    fill: #afb1b8;
+    &:hover,
+    &:focus {
+      fill: rgb(0%, 50%, 100%);
+      border-color: rgb(0%, 50%, 100%);
+    }
+  }
 }
 
 .clients_icon_all {
@@ -42,20 +54,4 @@
   margin-right: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-}
-
-.clients_icon_logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 106px;
-  height: 60px;
-  transition: all 250ms;
-  fill: #afb1b8;
-}
-
-.clients_icon_logo:hover,
-.clients_icon_logo:focus {
-  fill: rgb(0%, 50%, 100%);
-  border-color: rgb(0%, 50%, 100%);
 }

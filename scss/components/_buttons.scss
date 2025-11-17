@@ -5,28 +5,27 @@
   padding-top: 94px;
   padding-bottom: 34px;
   align-items: center;
-}
-
-.portfolio_list_button_link {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--text-color);
-  border: none;
-  transition: all 250ms;
-}
-
-.portfolio_list_button_link:hover,
-.portfolio_list_button_link:focus {
-  background-color: rgb(0%, 50%, 100%);
-  color: white;
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  background: #2196f3;
-  border: none;
+  .portfolio_list_button_link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $text-color;
+    border: none;
+    transition: all 250ms;
+    padding: 6px 23px;
+    &:hover,
+    &:focus {
+      background-color: rgb(0%, 50%, 100%);
+      color: white;
+      box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
+        0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+      background: #2196f3;
+      border: none;
+    }
+  }
 }
 
 .footer_input_search_button {

@@ -3,113 +3,111 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 94px;
-}
+  .portfolio_list {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+  }
 
-.portfolio_list {
-  display: flex;
-  justify-content: center;
-  column-gap: 8px;
-}
+  .portfolio_card {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 20px;
+    .portfolio_card_item {
+      width: 370px;
+      overflow: hidden;
+      height: 404px;
+      transition: all 250ms;
+      &:hover,
+      &:focus {
+        
+        background: #fff;
+      }
 
-.portfolio_card {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 30px;
-  margin-bottom: 20px;
-}
+      .portfolio_card_item_title {
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $text-color;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
 
-.portfolio_card_item {
-  border: 1px solid #e0e0e0;
-  outline: 1px solid #e0e0e0;
-  width: 370px;
-  overflow: hidden;
-  height: 404px;
-  transition: all 250ms;
-}
+      .portfolio_card_item_text {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+        color: $text-color2;
+        margin-left: 10px;
+        margin-bottom: 20px;
+      }
 
-.portfolio_card_item:hover,
-.portfolio_card_item:focus {
-  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
-    0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background: #fff;
-}
+      .portfolio_card_item_image {
+        overflow: hidden;
+        position: relative;
+        height: 294px;
+        &:hover .portfolio_card_item_image_overlay {
+          transform: translateX(0);
+        }
 
-.portfolio_card_item_title {
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--text-color);
-  margin-left: 10px;
-  margin-top: 10px;
-}
+        .portfolio_card_item_image_overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 370px;
+          height: 294px;
+          background-color: rgba(33, 150, 243, 0.9);
+          color: white;
+          align-content: center;
+          padding: 24px;
+          transform: translateY(100%);
+          transition-property: transform;
+          transition-duration: 250ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          font-weight: 400;
+          font-size: 18px;
+          letter-spacing: 0.03em;
+          line-height: 156%;
+        }
+      }
 
-.portfolio_card_item_text {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: var(--text-color2);
-  margin-left: 10px;
-}
+      &:nth-child(1) .portfolio_card_item_image {
+        background-image: url("../image/portfolioimage/technocrack.png");
+      }
+      &:nth-child(2) .portfolio_card_item_image {
+        background-image: url("../image/portfolioimage/neworleansgoldstar.png");
+      }
+      &:nth-child(3) .portfolio_card_item_image {
+        background-image: url("../image/portfolioimage/seafood.png");
+      }
+      &:nth-child(4) .portfolio_card_item_image {
+        background-image: url("../image/portfolioimage/projectprime.png");
+      }
+      &:nth-child(5) .portfolio_card_item_image {
+        background-image: url("../image/portfolioimage/projectboxes.png");
+      }
+      &:nth-child(6) .portfolio_card_item_image {
+        background-image: url("../image/portfolioimage/inspiration.png");
+      }
+      &:nth-child(7) .portfolio_card_item_image {
+        background-image: url("../image/portfolioimage/limitededition.png");
+      }
+      &:nth-child(8) .portfolio_card_item_image {
+        background-image: url("../image/portfolioimage/labeltag.png");
+      }
+      &:nth-child(9) .portfolio_card_item_image {
+        background-image: url("../image/portfolioimage/growingbusiness.png");
+      }
+      .portfolio_card_item_container {
+        border: 1px solid #eeeeee;
 
-.portfolio_card_item_image {
-  overflow: hidden;
-  position: relative;
-  height: 294px;
-}
-
-.portfolio_card_item_image:hover .portfolio_card_item_image_overlay {
-  transform: translateX(0);
-}
-
-.portfolio_card_item_image_overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 370px;
-  height: 294px;
-  background-color: rgba(33, 150, 243, 0.9);
-  color: white;
-  align-content: center;
-  padding: 24px;
-  transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 400;
-  font-size: 18px;
-  letter-spacing: 0.03em;
-  line-height: 156%;
-}
-
-.portfolio_card_item:nth-child(1) .portfolio_card_item_image {
-  background-image: url("../image/portfolioimage/technocrack.png");
-}
-.portfolio_card_item:nth-child(2) .portfolio_card_item_image {
-  background-image: url("../image/portfolioimage/neworleansgoldstar.png");
-}
-.portfolio_card_item:nth-child(3) .portfolio_card_item_image {
-  background-image: url("../image/portfolioimage/seafood.png");
-}
-.portfolio_card_item:nth-child(4) .portfolio_card_item_image {
-  background-image: url("../image/portfolioimage/projectprime.png");
-}
-.portfolio_card_item:nth-child(5) .portfolio_card_item_image {
-  background-image: url("../image/portfolioimage/projectboxes.png");
-}
-.portfolio_card_item:nth-child(6) .portfolio_card_item_image {
-  background-image: url("../image/portfolioimage/inspiration.png");
-}
-.portfolio_card_item:nth-child(7) .portfolio_card_item_image {
-  background-image: url("../image/portfolioimage/limitededition.png");
-}
-.portfolio_card_item:nth-child(8) .portfolio_card_item_image {
-  background-image: url("../image/portfolioimage/labeltag.png");
-}
-.portfolio_card_item:nth-child(9) .portfolio_card_item_image {
-  background-image: url("../image/portfolioimage/growingbusiness.png");
+      }
+    }
+  }
 }

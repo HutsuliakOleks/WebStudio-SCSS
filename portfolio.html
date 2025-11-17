@@ -17,9 +17,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./reset/reset.css" />
+    <!-- <link rel="stylesheet" href="./reset/reset.css" /> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -27,23 +27,23 @@
         <a href="/" class="logo">Web<span class="logo_studio">Studio</span></a>
         <nav class="nav">
           <ul class="nav_list">
-            <li class="nav_list_item">
-              <a href="./index.html" class="nav_list_item_link">Студія</a>
+            <li class="nav_list__item">
+              <a href="./index.html" class="nav_list__item--link">Студія</a>
             </li>
-            <li class="nav_list_item">
-              <a href="./portfolio.html" class="nav_list_item_link"
+            <li class="nav_list__item">
+              <a href="./portfolio.html" class="nav_list__item--link"
                 >Портфоліо</a
               >
             </li>
-            <li class="nav_list_item">
-              <a href="#" class="nav_list_item_link">Контакти</a>
+            <li class="nav_list__item">
+              <a href="#" class="nav_list__item--link">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="contact_list">
           <li class="contact_list_item">
-            <a href="mailto:info@devstudio.com" class="contact_list_item_link">
-              <svg width="16" height="12" class="contact_list_item_link_icon">
+            <a href="mailto:info@devstudio.com" class="contact_list_item__link">
+              <svg width="16" height="12" class="contact_list_item__link--icon">
                 <use
                   href="icons/symbol-defs.svg#icon-envelope-hover"
                 ></use></svg
@@ -51,8 +51,8 @@
             </a>
           </li>
           <li class="contact_list_item">
-            <a href="tel:+380961111111" class="contact_list_item_link">
-              <svg width="10" height="12" class="contact_list_item_link_icon">
+            <a href="tel:+380961111111" class="contact_list_item__link">
+              <svg width="10" height="12" class="contact_list_item__link--icon">
                 <use href="icons/symbol-defs.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -102,8 +102,10 @@
                   відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h2 class="portfolio_card_item_title">Технокряк</h2>
-              <p class="portfolio_card_item_text">Веб-Сайт</p>
+              <div class="portfolio_card_item_container">
+                <h2 class="portfolio_card_item_title">Технокряк</h2>
+                <p class="portfolio_card_item_text">Веб-Сайт</p>
+              </div>
             </li>
             <li class="portfolio_card_item">
               <div class="portfolio_card_item_image" data-aos="fade-up">
@@ -114,10 +116,12 @@
                   відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h2 class="portfolio_card_item_title">
-                Постер New Orlean vs Golden Star
-              </h2>
-              <p class="portfolio_card_item_text">Дизайн</p>
+              <div class="portfolio_card_item_container">
+                <h2 class="portfolio_card_item_title">
+                  Постер New Orlean vs Golden Star
+                </h2>
+                <p class="portfolio_card_item_text">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio_card_item">
               <div class="portfolio_card_item_image" data-aos="fade-up">
@@ -128,8 +132,10 @@
                   відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h2 class="portfolio_card_item_title">Ресторан Seafood</h2>
-              <p class="portfolio_card_item_text">Додаток</p>
+              <div class="portfolio_card_item_container">
+                <h2 class="portfolio_card_item_title">Ресторан Seafood</h2>
+                <p class="portfolio_card_item_text">Додаток</p>
+              </div>
             </li>
             <li class="portfolio_card_item">
               <div class="portfolio_card_item_image" data-aos="fade-up">
@@ -140,8 +146,10 @@
                   відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h2 class="portfolio_card_item_title">Проєкт Prime</h2>
-              <p class="portfolio_card_item_text">Маркетинг</p>
+              <div class="portfolio_card_item_container">
+                <h2 class="portfolio_card_item_title">Проєкт Prime</h2>
+                <p class="portfolio_card_item_text">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio_card_item">
               <div class="portfolio_card_item_image" data-aos="fade-up">
@@ -152,8 +160,10 @@
                   відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h2 class="portfolio_card_item_title">Проєкт Boxes</h2>
-              <p class="portfolio_card_item_text">Додаток</p>
+              <div class="portfolio_card_item_container">
+                <h2 class="portfolio_card_item_title">Проєкт Boxes</h2>
+                <p class="portfolio_card_item_text">Додаток</p>
+              </div>
             </li>
             <li class="portfolio_card_item">
               <div class="portfolio_card_item_image" data-aos="fade-up">
@@ -164,10 +174,12 @@
                   відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h2 class="portfolio_card_item_title">
-                Inspiration has no Borders
-              </h2>
-              <p class="portfolio_card_item_text">Веб-Сайт</p>
+              <div class="portfolio_card_item_container">
+                <h2 class="portfolio_card_item_title">
+                  Inspiration has no Borders
+                </h2>
+                <p class="portfolio_card_item_text">Веб-Сайт</p>
+              </div>
             </li>
             <li class="portfolio_card_item">
               <div class="portfolio_card_item_image" data-aos="fade-up">
@@ -178,8 +190,12 @@
                   відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h2 class="portfolio_card_item_title">Видання Limited Edition</h2>
-              <p class="portfolio_card_item_text">Дизайн</p>
+              <div class="portfolio_card_item_container">
+                <h2 class="portfolio_card_item_title">
+                  Видання Limited Edition
+                </h2>
+                <p class="portfolio_card_item_text">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio_card_item">
               <div class="portfolio_card_item_image" data-aos="fade-up">
@@ -190,8 +206,10 @@
                   відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h2 class="portfolio_card_item_title">Проєкт LAB</h2>
-              <p class="portfolio_card_item_text">Маркетинг</p>
+              <div class="portfolio_card_item_container">
+                <h2 class="portfolio_card_item_title">Проєкт LAB</h2>
+                <p class="portfolio_card_item_text">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio_card_item">
               <div class="portfolio_card_item_image" data-aos="fade-up">
@@ -202,84 +220,88 @@
                   відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h2 class="portfolio_card_item_title">Growing Business</h2>
-              <p class="portfolio_card_item_text">Додаток</p>
+              <div class="portfolio_card_item_container">
+                <h2 class="portfolio_card_item_title">Growing Business</h2>
+                <p class="portfolio_card_item_text">Додаток</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <a href="/" class="logo"
-          >Web<span class="footer_logo_studio">Studio</span></a
-        >
-        <address>
-          <p class="footer_text">м. Київ, пр-т Лесі Українки, 26</p>
-          <ul class="footer_contact_list">
-            <li class="footer_contact_list_item">
-              <a
-                href="mailto:info@example.com"
-                class="footer_contact_list_item_link"
-                >info@example.com</a
-              >
-            </li>
-            <li class="footer_contact_list_item">
-              <a href="tel:+380961111111" class="footer_contact_list_item_link"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-          <div class="footer_icon">
-            <h2 class="footer_icon_title">Приєднутесь</h2>
-            <ul class="footer_icon_list">
-              <li class="footer_icon_list_item">
-                <a href="#" class="footer_icon_list_item_link">
-                  <svg width="20" height="20">
-                    <use
-                      href="./icons/symbol-defs.svg#icon-instagram-white"
-                      class="footer_icon_list_item_link_platform"
-                    ></use>
-                  </svg>
-                </a>
+      <div class="container footer_position">
+        <div class="footer_info">
+          <a href="/" class="logo"
+            >Web<span class="footer_logo_studio">Studio</span></a
+          >
+          <address class="footer_contact">
+            <p class="footer__text">м. Київ, пр-т Лесі Українки, 26</p>
+            <ul class="footer_contact_list">
+              <li class="footer_contact_list__item">
+                <a
+                  href="mailto:info@example.com"
+                  class="footer_contact_list__item--link"
+                  >info@example.com</a
+                >
               </li>
-              <li class="footer_icon_list_item">
-                <a href="#" class="footer_icon_list_item_link">
-                  <svg width="20" height="20">
-                    <use
-                      href="icons/symbol-defs.svg#icon-twitter-white"
-                      class="footer_icon_list_item_link_platform"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer_icon_list_item">
-                <a href="#" class="footer_icon_list_item_link">
-                  <svg width="20" height="20">
-                    <use
-                      href="icons/symbol-defs.svg#icon-facebook-white"
-                      class="footer_icon_list_item_link_platform"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer_icon_list_item">
-                <a href="#" class="footer_icon_list_item_link">
-                  <svg width="20" height="20">
-                    <use
-                      href="./icons/symbol-defs.svg#icon-linkedin-white"
-                      class="footer_icon_list_item_link_platform"
-                    ></use>
-                  </svg>
-                </a>
+              <li class="footer_contact_list__item">
+                <a
+                  href="tel:+380961111111"
+                  class="footer_contact_list__item--link"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
-          </div>
-        </address>
+          </address>
+        </div>
+        <div class="footer_icon">
+          <h2 class="footer_icon__title">Приєднутесь</h2>
+          <ul class="footer_icon_list">
+            <li class="footer_icon_list_item">
+              <a href="#" class="footer_icon_list_item__link">
+                <svg width="20" height="20">
+                  <use
+                    href="./icons/symbol-defs.svg#icon-instagram-white"
+                    class="footer_icon_list_item__link--platform"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer_icon_list_item">
+              <a href="#" class="footer_icon_list_item__link">
+                <svg width="20" height="20">
+                  <use
+                    href="icons/symbol-defs.svg#icon-twitter-white"
+                    class="footer_icon_list_item__link--platform"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer_icon_list_item">
+              <a href="#" class="footer_icon_list_item__link">
+                <svg width="20" height="20">
+                  <use
+                    href="icons/symbol-defs.svg#icon-facebook-white"
+                    class="footer_icon_list_item__link--platform"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer_icon_list_item">
+              <a href="#" class="footer_icon_list_item__link">
+                <svg width="20" height="20">
+                  <use
+                    href="./icons/symbol-defs.svg#icon-linkedin-white"
+                    class="footer_icon_list_item__link--platform"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="footer_input_search">
-          <label class="footer_input_search_label"
-            >Підпишіться на розсилку</label
-          >
+          <h2 class="footer_input_search_label">Підпишіться на розсилку</h2>
           <div class="footer_input_search_container">
             <input
               type="text"
