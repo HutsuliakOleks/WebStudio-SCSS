@@ -1,8 +1,5 @@
 .clients {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @extend %clients;
 }
 
 .clients_title {
@@ -30,13 +27,7 @@
     fill: rgb(0%, 50%, 100%);
   }
   .clients_icon_logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 106px;
-    height: 60px;
-    transition: 250ms;
-    fill: #afb1b8;
+    @extend %clientslogo;
     &:hover,
     &:focus {
       fill: rgb(0%, 50%, 100%);
@@ -46,12 +37,5 @@
 }
 
 .clients_icon_all {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  @extend %clientsicon;
 }

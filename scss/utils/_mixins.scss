@@ -1,0 +1,5 @@
+@mixin bg-image($bg-image) {
+    background-image: $bg-image;
+    width: 370px;
+    height: 294px;
+}

@@ -42,84 +42,54 @@
   }
 
   .feature_icon1 {
-    display: flex;
-    justify-content: center;
-    color: white;
-    width: 270px;
-    height: 120px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    @extend %featureicon;
     &:hover::after {
-      display: block;
-      width: 100%;
+      @extend %featureiconafter;
     }
   }
 
   .feature_icon1:hover::after {
-    display: block;
-    width: 100%;
+    @extend %featureiconafter;
   }
 
   .feature_icon_shape1 {
-    background-color: #f5f4fa;
+    @extend %featureiconshape;
   }
 
   .feature_icon2 {
-    display: flex;
-    justify-content: center;
-    color: white;
-    width: 270px;
-    height: 120px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    @extend %featureicon;
     &:hover::after {
-      display: block;
-      width: 100%;
+      @extend %featureiconafter;
     }
   }
 
   .feature_icon2:hover::after {
-    display: block;
-    width: 100%;
+    @extend %featureiconafter;
   }
 
   .feature_icon_shape2 {
-    background-color: #f5f4fa;
+    @extend %featureiconshape;
   }
 
   .feature_icon3 {
-    display: flex;
-    justify-content: center;
-    color: white;
-    width: 270px;
-    height: 120px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    @extend %featureicon;
     &:hover::after {
-      display: block;
-      width: 100%;
+      @extend %featureiconafter;
     }
   }
 
   .feature_icon_shape3 {
-    background-color: #f5f4fa;
+    @extend %featureiconshape;
   }
 
   .feature_icon4 {
-    display: flex;
-    justify-content: center;
-    color: white;
-    width: 270px;
-    height: 120px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    @extend %featureicon;
     &:hover::after {
-      display: block;
-      width: 100%;
+      @extend %featureiconafter;
     }
   }
 
   .feature_icon_shape4 {
-    background-color: #f5f4fa;
+    @extend %featureiconshape;
   }
 }

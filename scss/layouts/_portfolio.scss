@@ -10,11 +10,7 @@
   }
 
   .portfolio_card {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
-    margin-bottom: 20px;
+    @extend %portfoliocard;
     .portfolio_card_item {
       width: 370px;
       overflow: hidden;
@@ -22,7 +18,6 @@
       transition: all 250ms;
       &:hover,
       &:focus {
-        
         background: #fff;
       }
 
@@ -78,35 +73,48 @@
       }
 
       &:nth-child(1) .portfolio_card_item_image {
-        background-image: url("../image/portfolioimage/technocrack.png");
+        @include bg-image(
+          $image: url("../image/portfolioimage/technocrack.png")
+        );
       }
       &:nth-child(2) .portfolio_card_item_image {
-        background-image: url("../image/portfolioimage/neworleansgoldstar.png");
+        @include bg-image(
+          $image: url("../image/portfolioimage/neworleansgoldstar.png")
+        );
       }
       &:nth-child(3) .portfolio_card_item_image {
-        background-image: url("../image/portfolioimage/seafood.png");
+        @include bg-image($image: url("../image/portfolioimage/seafood.png"));
       }
       &:nth-child(4) .portfolio_card_item_image {
-        background-image: url("../image/portfolioimage/projectprime.png");
+        @include bg-image(
+          $image: url("../image/portfolioimage/projectprime.png")
+        );
       }
       &:nth-child(5) .portfolio_card_item_image {
-        background-image: url("../image/portfolioimage/projectboxes.png");
+        @include bg-image(
+          $image: url("../image/portfolioimage/projectboxes.png")
+        );
       }
       &:nth-child(6) .portfolio_card_item_image {
-        background-image: url("../image/portfolioimage/inspiration.png");
+        @include bg-image(
+          $image: url("../image/portfolioimage/inspiration.png")
+        );
       }
       &:nth-child(7) .portfolio_card_item_image {
-        background-image: url("../image/portfolioimage/limitededition.png");
+        @include bg-image(
+          $image: url("../image/portfolioimage/limitededition.png")
+        );
       }
       &:nth-child(8) .portfolio_card_item_image {
-        background-image: url("../image/portfolioimage/labeltag.png");
+        @include bg-image($image: url("../image/portfolioimage/labeltag.png"));
       }
       &:nth-child(9) .portfolio_card_item_image {
-        background-image: url("../image/portfolioimage/growingbusiness.png");
+        @include bg-image(
+          $image: url("../image/portfolioimage/growingbusiness.png")
+        );
       }
       .portfolio_card_item_container {
         border: 1px solid #eeeeee;
-
       }
     }
   }

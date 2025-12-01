@@ -1,4 +1,5 @@
 @import "./abstracts/variables";
+@import "./base/addaptives";
 @import "./base/container";
 @import "./base/reset";
 @import "./base/typography";
@@ -12,3 +13,5 @@
 @import "./layouts/hero";
 @import "./layouts/portfolio";
 @import "./layouts/teams";
+@import "./utils/placeholders";
+@import "./utils/mixins";
