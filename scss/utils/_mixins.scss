@@ -1,5 +1,3 @@
-@mixin bg-image($bg-image) {
-    background-image: $bg-image;
-    width: 370px;
-    height: 294px;
+@mixin portfolio-image($image) {
+  background-image: $image;
 }

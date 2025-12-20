@@ -22,7 +22,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="./styles/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel ="stylesheet" href ="./styles/adaptstyles.css" />
+    <link rel="stylesheet" href="./styles/adaptstyles.css" />
   </head>
   <body>
     <header class="header">
@@ -86,8 +86,8 @@
               </div>
               <h2 class="feature_title">Увага до деталей</h2>
               <p class="feature_text">
-                Ідейні міркування, і навіть початок <br />повсякденноі роботи з
-                форматування <br />позицій.
+                Ідейні міркування, і навіть початок повсякденноі роботи з
+                форматування позицій.
               </p>
             </li>
             <li class="feature_item">
@@ -103,8 +103,8 @@
               </div>
               <h2 class="feature_title">Пунктуальність</h2>
               <p class="feature_text">
-                Завдання організації, особливо рамки <br />і місце навчання
-                кадрів тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
             <li class="feature_item">
@@ -120,8 +120,7 @@
               </div>
               <h2 class="feature_title">Планування</h2>
               <p class="feature_text">
-                Так само консультація з широким <br />активом значною мірою
-                зумовлює.
+                Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="feature_item">
@@ -137,8 +136,8 @@
               </div>
               <h2 class="feature_title">Сучасні технології</h2>
               <p class="feature_text">
-                Значимість цих проблем настільки <br />очевидна, що реалізація
-                планованих <br />завдань.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планованих завдань.
               </p>
             </li>
           </ul>
@@ -208,6 +207,7 @@
                 alt="Ігор Дем'яненко"
                 width="270"
                 height="260"
+                class="team_list_item_photo"
               />
               <h3 class="team_list_item_name">Ігор Дем'яненко</h3>
               <p class="team_list_item_text">Product Designer</p>
@@ -253,6 +253,7 @@
                 alt="Ольга Реєпіна"
                 width="270"
                 height="260"
+                class="team_list_item_photo"
               />
               <h3 class="team_list_item_name">Ольга Рєпіна</h3>
               <p class="team_list_item_text">Frontend Developer</p>
@@ -298,6 +299,7 @@
                 alt="Микола Тарасов"
                 width="270"
                 height="260"
+                class="team_list_item_photo"
               />
               <h3 class="team_list_item_name">Микола Тарасов</h3>
               <p class="team_list_item_text">Marketing</p>
@@ -343,6 +345,7 @@
                 alt="Михайло Єремаков"
                 width="270"
                 height="260"
+                class="team_list_item_photo"
               />
               <h3 class="team_list_item_name">Михайло Єремаков</h3>
               <p class="team_list_item_text">UI Designer</p>
@@ -529,8 +532,8 @@
                 <use href ="icons/symbol-defs.svg#icon-person-black-18dp-1"
               </svg>
             </div>
-            </div>
-            <div class="modal-form-field">
+          </div>
+          <div class="modal-form-field">
             <label class="modal-form-label">Телефон</label>
             <div class="input-wrapper">
               <input
@@ -544,8 +547,8 @@
                 <use href ="icons/symbol-defs.svg#icon-phone-black-18dp-1"
               </svg>
             </div>
-            </div>
-            <div class="modal-form-field">
+          </div>
+          <div class="modal-form-field">
             <label class="modal-form-label">Пошта</label>
             <div class="input-wrapper">
               <input
@@ -559,8 +562,8 @@
                 <use href ="icons/symbol-defs.svg#icon-email-black-18dp-1"
               </svg>
             </div>
-            </div>
-            <div class="modal-form-field">
+          </div>
+          <div class="modal-form-field">
             <label class="modal-form-label">Коментар</label>
             <div class="modal-textarea">
               <textarea
@@ -572,18 +575,17 @@
               >
               </textarea>
             </div>
-            </div>
-            <div class="form-field-check">
-              <input type="checkbox" is="input check" chass="input-check" />
-              <label for="input-check" class="input_check_check">
-                Погоджуюся з розсилкою та приймаю<a href="#" class="policy"
-                  >Умови договору</a
-                >
-              </label>
-            </div>
-            <button class="button_send" type="button">Відправити</button>
-          </form>
-        </div>
+          </div>
+          <div class="form-field-check">
+            <input type="checkbox" is="input check" class="input-check" />
+            <label for="input-check" class="input_check_check">
+              Погоджуюся з розсилкою та приймаю<a href="#" class="policy"
+                >Умови договору</a
+              >
+            </label>
+          </div>
+          <button class="button_send" type="button">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./script/modal.js" type="module"></script>
@@ -591,5 +593,12 @@
     <script>
       AOS.init();
     </script>
+    <script
+      defer=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer="" src="./script/modal_menu.js"></script>
   </body>
 </html>

@@ -2,17 +2,61 @@
   @extend %footer;
   .footer_position {
     display: flex;
+    @media screen and (max-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 60px;
+    }
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 60px;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: nowrap;
+      row-gap: 60px;
+    }
   }
 
   .footer__text {
     padding-top: 9px;
+    @media screen and (max-width: 480px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 480px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
   .footer_logo_studio {
     color: white;
     margin-bottom: 20px;
+    @media screen and (max-width: 480px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 480px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
   .footer_contact_list {
     font-style: normal;
+    @media screen and (max-width: 480px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 480px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
     .footer_contact_list__item {
       padding-top: 9px;
     }
@@ -27,6 +71,18 @@
     height: 80px;
     margin-left: 70px;
     margin-top: 12px;
+    @media screen and (max-width: 480px) {
+      text-align: center;
+      align-items: center;
+    }
+    @media screen and (min-width: 480px) {
+      text-align: center;
+      align-items: center;
+    }
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      align-items: left;
+    }
     .footer_icon__title {
       font-family: $font-family;
       font-weight: 700;
@@ -61,16 +117,42 @@
   }
 
   .footer_input_search {
+    margin-left: 93px;
+    margin-top: 12px;
     @extend %footerinput;
     .footer_input_search_label {
       margin-bottom: 20px;
       font-size: 14px;
+      @media screen and (max-width: 480px) {
+        text-align: center;
+      }
+      @media screen and (min-width: 480px) {
+        text-align: center;
+      }
+      @media screen and (min-width: 768px) {
+        text-align: left;
+      }
     }
 
     .footer_input_search_container {
       display: flex;
       align-items: center;
       column-gap: 12px;
+      @media screen and (max-width: 480px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      @media screen and (min-width: 480px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+      }
     }
 
     .footer_input_search_name {

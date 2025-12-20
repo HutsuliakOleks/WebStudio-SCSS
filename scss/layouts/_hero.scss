@@ -1,5 +1,29 @@
 .hero {
-  @extend %hero;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  background-image: url("../image/Img.png");
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 480px) {
+    max-width: 768px;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+  }
   .hero_image {
     animation-name: slide;
     animation-delay: 0ms;
@@ -19,7 +43,6 @@
   }
 
   .hero_title {
-    width: 696px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
@@ -30,5 +53,40 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    width: 696px;
+    @media screen and (max-width: 480px) {
+      max-width: 480px;
+      font-family: $font-family;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.62;
+      letter-spacing: 0.06em;
+      margin-left: auto;
+      margin-right: auto;
+      width: 360px;
+    }
+    @media screen and (min-width: 480px) {
+      max-width: 768px;
+      font-family: $font-family;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.62;
+      letter-spacing: 0.06em;
+      margin-left: auto;
+      margin-right: auto;
+      width: 360px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 1200px;
+      font-weight: 900;
+      font-size: 44px;
+      letter-spacing: 0.06em;
+      line-height: 1.36;
+      word-spacing: 5px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 696px;
+    }
   }
 }

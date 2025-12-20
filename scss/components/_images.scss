@@ -10,6 +10,7 @@
   }
 
   .image_list {
+    width: 215px;
     @extend %imagelist;
     .image_list_photo {
       position: relative;
@@ -23,5 +24,18 @@
     .image_list_container {
       @extend %imagecontainer;
     }
+    @media screen and (max-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }

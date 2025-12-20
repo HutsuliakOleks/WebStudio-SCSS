@@ -7,6 +7,21 @@
     display: flex;
     justify-content: center;
     column-gap: 8px;
+    @media screen and (max-width: 479px) {
+      flex-wrap: wrap;
+      justify-content: left;
+      margin-top: 66px;
+      margin-bottom: 40px;
+    }
+  }
+  .portfolio_list_button {
+    @media screen and (max-width: 479px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      padding-top: 0px;
+      padding-bottom: 8px;
+    }
   }
 
   .portfolio_card {
@@ -73,48 +88,195 @@
       }
 
       &:nth-child(1) .portfolio_card_item_image {
-        @include bg-image(
-          $image: url("../image/portfolioimage/technocrack.png")
-        );
+        background-image: url("../image/portfolioimage/technocrack.png");
+        width: 370px;
+        height: 294px;
+        @media screen and (max-width: 479px) {
+          width: 450px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 480px) {
+          width: 354px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 768px) {
+          width: 370px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
       }
       &:nth-child(2) .portfolio_card_item_image {
-        @include bg-image(
-          $image: url("../image/portfolioimage/neworleansgoldstar.png")
-        );
+        background-image: url("../image/portfolioimage/neworleansgoldstar.png");
+        width: 370px;
+        height: 294px;
+        @media screen and (max-width: 479px) {
+          width: 450px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 480px) {
+          width: 354px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 768px) {
+          width: 370px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
       }
       &:nth-child(3) .portfolio_card_item_image {
-        @include bg-image($image: url("../image/portfolioimage/seafood.png"));
+        background-image: url("../image/portfolioimage/seafood.png");
+        width: 370px;
+        height: 294px;
+        @media screen and (max-width: 479px) {
+          width: 450px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 480px) {
+          width: 354px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 768px) {
+          width: 370px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
       }
       &:nth-child(4) .portfolio_card_item_image {
-        @include bg-image(
-          $image: url("../image/portfolioimage/projectprime.png")
-        );
+        background-image: url("../image/portfolioimage/projectprime.png");
+        width: 370px;
+        height: 294px;
+        @media screen and (max-width: 479px) {
+          width: 450px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 480px) {
+          width: 354px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 768px) {
+          width: 370px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
       }
       &:nth-child(5) .portfolio_card_item_image {
-        @include bg-image(
-          $image: url("../image/portfolioimage/projectboxes.png")
-        );
+        background-image: url("../image/portfolioimage/projectboxes.png");
+        width: 370px;
+        height: 294px;
+        @media screen and (max-width: 479px) {
+          width: 450px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 480px) {
+          width: 354px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 768px) {
+          width: 370px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
       }
       &:nth-child(6) .portfolio_card_item_image {
-        @include bg-image(
-          $image: url("../image/portfolioimage/inspiration.png")
-        );
+        background-image: url("../image/portfolioimage/inspiration.png");
+        width: 370px;
+        height: 294px;
+        @media screen and (max-width: 479px) {
+          width: 450px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 480px) {
+          width: 354px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 768px) {
+          width: 370px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
       }
       &:nth-child(7) .portfolio_card_item_image {
-        @include bg-image(
-          $image: url("../image/portfolioimage/limitededition.png")
-        );
+        background-image: url("../image/portfolioimage/limitededition.png");
+        width: 370px;
+        height: 294px;
+        @media screen and (max-width: 479px) {
+          width: 450px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 480px) {
+          width: 354px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 768px) {
+          width: 370px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
       }
       &:nth-child(8) .portfolio_card_item_image {
-        @include bg-image($image: url("../image/portfolioimage/labeltag.png"));
+        background-image: url("../image/portfolioimage/labeltag.png");
+        width: 370px;
+        height: 294px;
+        @media screen and (max-width: 479px) {
+          width: 450px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 480px) {
+          width: 354px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 768px) {
+          width: 370px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
       }
       &:nth-child(9) .portfolio_card_item_image {
-        @include bg-image(
-          $image: url("../image/portfolioimage/growingbusiness.png")
-        );
+        background-image: url("../image/portfolioimage/growingbusiness.png");
+        width: 370px;
+        height: 294px;
+        @media screen and (max-width: 479px) {
+          width: 450px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 480px) {
+          width: 354px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 768px) {
+          width: 370px;
+          height: 294px;
+          background-repeat: no-repeat;
+        }
       }
       .portfolio_card_item_container {
         border: 1px solid #eeeeee;
+      }
+      @media screen and (max-width: 479px) {
+        width: 450px;
+        height: 404px;
+      }
+      @media screen and (min-width: 480px) {
+        width: 354px;
+        height: 440px;
       }
     }
   }
