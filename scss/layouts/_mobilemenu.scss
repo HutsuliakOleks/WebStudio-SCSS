@@ -89,16 +89,22 @@
 
 .mobile_social_list {
   display: flex;
-  column-gap: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   width: 22px;
   height: 0px;
-}
-
-.mobile_social_link {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 122%;
-  letter-spacing: 0.02em;
-  color: #2196f3;
+  .mobile_social_item:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+  }
+  .mobile_social_link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
 }
