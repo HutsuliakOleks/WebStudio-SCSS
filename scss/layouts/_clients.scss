@@ -32,15 +32,15 @@
         border-color: rgb(0%, 50%, 100%);
       }
     }
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 480px) {
       width: 210px;
       height: 92px;
     }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
       width: 226px;
       height: 92px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       width: 170px;
       height: 92px;
     }
@@ -49,19 +49,19 @@
 
 .clients_icon_all {
   @extend %clientsicon;
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     display: flex;
     flex-wrap: wrap;
     max-width: 480px;
     row-gap: 30px;
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     max-width: 768px;
     row-gap: 30px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
     max-width: 1200px;

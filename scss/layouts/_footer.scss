@@ -2,12 +2,6 @@
   @extend %footer;
   .footer_position {
     display: flex;
-    @media screen and (max-width: 480px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      row-gap: 60px;
-    }
     @media screen and (min-width: 480px) {
       display: flex;
       flex-wrap: wrap;
@@ -15,6 +9,12 @@
       row-gap: 60px;
     }
     @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 60px;
+    }
+    @media screen and (min-width: 1200px) {
       display: flex;
       flex-wrap: nowrap;
       row-gap: 60px;
@@ -23,38 +23,38 @@
 
   .footer__text {
     padding-top: 9px;
-    @media screen and (max-width: 480px) {
-      text-align: center;
-    }
     @media screen and (min-width: 480px) {
       text-align: center;
     }
     @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
       text-align: left;
     }
   }
   .footer_logo_studio {
     color: white;
     margin-bottom: 20px;
-    @media screen and (max-width: 480px) {
-      text-align: center;
-    }
     @media screen and (min-width: 480px) {
       text-align: center;
     }
     @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
       text-align: left;
     }
   }
   .footer_contact_list {
     font-style: normal;
-    @media screen and (max-width: 480px) {
-      text-align: center;
-    }
     @media screen and (min-width: 480px) {
       text-align: center;
     }
     @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
       text-align: left;
     }
     .footer_contact_list__item {
@@ -71,15 +71,15 @@
     height: 80px;
     margin-left: 70px;
     margin-top: 12px;
-    @media screen and (max-width: 480px) {
-      text-align: center;
-      align-items: center;
-    }
     @media screen and (min-width: 480px) {
       text-align: center;
       align-items: center;
     }
     @media screen and (min-width: 768px) {
+      text-align: center;
+      align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
       text-align: left;
       align-items: left;
     }
@@ -123,13 +123,13 @@
     .footer_input_search_label {
       margin-bottom: 20px;
       font-size: 14px;
-      @media screen and (max-width: 480px) {
-        text-align: center;
-      }
       @media screen and (min-width: 480px) {
         text-align: center;
       }
       @media screen and (min-width: 768px) {
+        text-align: center;
+      }
+      @media screen and (min-width: 1200px) {
         text-align: left;
       }
     }
@@ -138,17 +138,17 @@
       display: flex;
       align-items: center;
       column-gap: 12px;
-      @media screen and (max-width: 480px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
       @media screen and (min-width: 480px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
       }
       @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      @media screen and (min-width: 1200px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: left;

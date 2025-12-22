@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     column-gap: 8px;
-    @media screen and (max-width: 479px) {
+    @media screen and (min-width: 480px) {
       flex-wrap: wrap;
       justify-content: left;
       margin-top: 66px;
@@ -15,7 +15,7 @@
     }
   }
   .portfolio_list_button {
-    @media screen and (max-width: 479px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
       justify-content: left;
@@ -91,17 +91,17 @@
         background-image: url("../image/portfolioimage/technocrack.png");
         width: 370px;
         height: 294px;
-        @media screen and (max-width: 479px) {
+        @media screen and (min-width: 480px) {
           width: 450px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
           width: 354px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
           width: 370px;
           height: 294px;
           background-repeat: no-repeat;
@@ -111,17 +111,17 @@
         background-image: url("../image/portfolioimage/neworleansgoldstar.png");
         width: 370px;
         height: 294px;
-        @media screen and (max-width: 479px) {
+        @media screen and (min-width: 480px) {
           width: 450px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
           width: 354px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
           width: 370px;
           height: 294px;
           background-repeat: no-repeat;
@@ -131,17 +131,17 @@
         background-image: url("../image/portfolioimage/seafood.png");
         width: 370px;
         height: 294px;
-        @media screen and (max-width: 479px) {
+        @media screen and (min-width: 480px) {
           width: 450px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
           width: 354px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
           width: 370px;
           height: 294px;
           background-repeat: no-repeat;
@@ -151,17 +151,17 @@
         background-image: url("../image/portfolioimage/projectprime.png");
         width: 370px;
         height: 294px;
-        @media screen and (max-width: 479px) {
+        @media screen and (min-width: 480px) {
           width: 450px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
           width: 354px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
           width: 370px;
           height: 294px;
           background-repeat: no-repeat;
@@ -171,17 +171,17 @@
         background-image: url("../image/portfolioimage/projectboxes.png");
         width: 370px;
         height: 294px;
-        @media screen and (max-width: 479px) {
+        @media screen and (min-width: 480px) {
           width: 450px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
           width: 354px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
           width: 370px;
           height: 294px;
           background-repeat: no-repeat;
@@ -191,17 +191,17 @@
         background-image: url("../image/portfolioimage/inspiration.png");
         width: 370px;
         height: 294px;
-        @media screen and (max-width: 479px) {
+        @media screen and (min-width: 480px) {
           width: 450px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
           width: 354px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
           width: 370px;
           height: 294px;
           background-repeat: no-repeat;
@@ -211,17 +211,17 @@
         background-image: url("../image/portfolioimage/limitededition.png");
         width: 370px;
         height: 294px;
-        @media screen and (max-width: 479px) {
+        @media screen and (min-width: 480px) {
           width: 450px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
           width: 354px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
           width: 370px;
           height: 294px;
           background-repeat: no-repeat;
@@ -231,17 +231,17 @@
         background-image: url("../image/portfolioimage/labeltag.png");
         width: 370px;
         height: 294px;
-        @media screen and (max-width: 479px) {
+        @media screen and (min-width: 480px) {
           width: 450px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
           width: 354px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
           width: 370px;
           height: 294px;
           background-repeat: no-repeat;
@@ -251,17 +251,17 @@
         background-image: url("../image/portfolioimage/growingbusiness.png");
         width: 370px;
         height: 294px;
-        @media screen and (max-width: 479px) {
+        @media screen and (min-width: 480px) {
           width: 450px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
           width: 354px;
           height: 294px;
           background-repeat: no-repeat;
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
           width: 370px;
           height: 294px;
           background-repeat: no-repeat;
@@ -270,11 +270,11 @@
       .portfolio_card_item_container {
         border: 1px solid #eeeeee;
       }
-      @media screen and (max-width: 479px) {
+      @media screen and (min-width: 480px) {
         width: 450px;
         height: 404px;
       }
-      @media screen and (min-width: 480px) {
+      @media screen and (min-width: 768px) {
         width: 354px;
         height: 440px;
       }

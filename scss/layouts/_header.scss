@@ -33,14 +33,14 @@
 }
 .nav {
   margin-left: 193px;
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     display: none;
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 87px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: 193px;
   }
@@ -49,14 +49,14 @@
     justify-content: space-evenly;
     align-items: center;
     @extend %navigationlist;
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 480px) {
       display: none;
     }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       margin-left: 56px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       display: flex;
       margin-left: -56px;
     }
@@ -101,14 +101,14 @@
     @media screen and (max-width: 480px) {
       display: none;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       display: flex;
       flex-wrap: nowrap;
     }
     .contact_list_item__link--icon {
       margin-right: 10px;
-      @media screen and (max-width: 480px) {
-        display: none;
+      @media screen and (min-width: 480px) {
+        display: flex;
       }
       &:hover {
         color: rgb(0%, 50%, 100%);
@@ -119,15 +119,41 @@
       }
     }
   }
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
   @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
+    display: none;
   }
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
     flex-wrap: nowrap;
+  }
+}
+
+.header_mobile_menu_open {
+  @media screen and (min-width: 480px) {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    .header_mobile_menu_icon {
+      fill: black;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 }
