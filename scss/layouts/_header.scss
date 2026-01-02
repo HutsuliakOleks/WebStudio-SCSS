@@ -9,6 +9,7 @@
   max-width: 480px;
   .header_position {
     @extend %flex;
+    justify-content: space-between;
   }
   @media screen and (min-width: 480px) {
     max-width: 480px;
@@ -32,13 +33,13 @@
   }
 }
 .nav {
-  margin-left: 193px;
   @media screen and (min-width: 480px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 87px;
+    // margin-left: 87px;
+    margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -46,7 +47,6 @@
   }
   .nav_list {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     @extend %navigationlist;
     @media screen and (min-width: 480px) {
@@ -54,7 +54,9 @@
     }
     @media screen and (min-width: 768px) {
       display: flex;
-      margin-left: 56px;
+      // margin-left: 56px;
+      margin-left: 87px;
+      column-gap: 50px;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
@@ -91,7 +93,7 @@
 }
 
 .contact_list {
-  @extend %contactlist;
+  // @extend %contactlist;
   .contact_list_item__link {
     display: flex;
     color: rgb(20%, 20%, 20%);
@@ -124,7 +126,9 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 70px;
+    align-items: flex-start;
   }
   @media screen and (min-width: 1200px) {
     display: flex;

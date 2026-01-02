@@ -1,10 +1,24 @@
+.footer .logo {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
 .footer {
   @extend %footer;
+  @media screen and (max-width: 481px) {
+    height: 603px;
+  }
+  @media screen and (max-width: 769px) {
+    height: 453px;
+  }
   .footer_position {
     display: flex;
     @media screen and (min-width: 480px) {
       display: flex;
       flex-wrap: wrap;
+      flex-direction: row;
       justify-content: center;
       row-gap: 60px;
     }
@@ -21,12 +35,28 @@
     }
   }
 
-  .footer__text {
-    padding-top: 9px;
+  .footer_info {
+    display: block;
     @media screen and (min-width: 480px) {
-      text-align: center;
+      width: 410px;
+      height: 127px;
     }
     @media screen and (min-width: 768px) {
+      width: 232px;
+      height: 127px;
+      flex-grow: 1;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 232px;
+      height: 127px;
+      flex-grow: 1;
+    }
+  }
+
+  .footer__text {
+    padding-top: 9px;
+    font-style: normal;
+    @media screen and (min-width: 480px) {
       text-align: center;
     }
     @media screen and (min-width: 1200px) {
@@ -39,30 +69,36 @@
     @media screen and (min-width: 480px) {
       text-align: center;
     }
-    @media screen and (min-width: 768px) {
-      text-align: center;
-    }
     @media screen and (min-width: 1200px) {
       text-align: left;
+      flex-grow: 1;
     }
   }
-  .footer_contact_list {
-    font-style: normal;
-    @media screen and (min-width: 480px) {
-      text-align: center;
-    }
-    @media screen and (min-width: 768px) {
-      text-align: center;
-    }
-    @media screen and (min-width: 1200px) {
-      text-align: left;
-    }
-    .footer_contact_list__item {
-      padding-top: 9px;
-    }
+  .footer_contact {
+    .footer_contact_list {
+      font-style: normal;
+      @media screen and (min-width: 480px) {
+        width: 232px;
+        height: 79px;
+        text-align: center;
+      }
 
-    .footer_contact_list__item--link {
-      color: $text-color2;
+      @media screen and (max-width: 1199px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 232px;
+        height: 79px;
+        text-align: left;
+      }
+      .footer_contact_list__item {
+        padding-top: 9px;
+      }
+
+      .footer_contact_list__item--link {
+        color: $text-color2;
+      }
     }
   }
 
@@ -72,16 +108,26 @@
     margin-left: 70px;
     margin-top: 12px;
     @media screen and (min-width: 480px) {
+      width: 206px;
+      height: 80px;
       text-align: center;
       align-items: center;
+      margin-left: 0px;
+      margin-top: 0px;
     }
     @media screen and (min-width: 768px) {
       text-align: center;
       align-items: center;
+      margin-left: 0px;
+      margin-top: 0px;
+      flex-grow: 1;
     }
     @media screen and (min-width: 1200px) {
       text-align: left;
       align-items: left;
+      margin-left: 0px;
+      margin-top: 0px;
+      flex-grow: 1;
     }
     .footer_icon__title {
       font-family: $font-family;
@@ -97,8 +143,12 @@
     .footer_icon_list {
       display: flex;
       column-gap: 10px;
-      justify-content: center;
-      align-items: center;
+      justify-content: left;
+      align-items: left;
+      @media screen and (max-width: 1199px) {
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     .footer_icon_list_item {
@@ -117,9 +167,15 @@
   }
 
   .footer_input_search {
+    width: 570px;
+    height: 86px;
     margin-left: 93px;
     margin-top: 12px;
     @extend %footerinput;
+    @media screen and (min-width: 480px) {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
     .footer_input_search_label {
       margin-bottom: 20px;
       font-size: 14px;
@@ -131,6 +187,7 @@
       }
       @media screen and (min-width: 1200px) {
         text-align: left;
+        flex-grow: 1;
       }
     }
 
@@ -144,14 +201,14 @@
         justify-content: center;
       }
       @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column;
+        row-gap: 20px;
       }
       @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: left;
+        flex-grow: 1;
       }
     }
 
@@ -166,7 +223,7 @@
       font-weight: 400;
       letter-spacing: 0.03em;
       font-size: 16px;
-      line-height: 126%;
+      line-height: 1.26;
     }
   }
 }
